@@ -64,7 +64,7 @@ function MyNavbar() {
 
   return (
     <>
-      <Navbar expand="lg" className="navbar navbar-expand-lg">
+      <Navbar expanded={!isNavCollapsed} expand="lg" className="navbar navbar-expand-lg">
         <Container>
           <Link to="/the-eagles-test/" className="navbar-brand d-flex align-items-center" onClick={closeNav}>
             <img src="/the-eagles-test/logo.png" alt="logo" className="logo-img" />
@@ -73,7 +73,7 @@ function MyNavbar() {
 
           {/* Toggle for hamburger */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavToggle} />
-          <Navbar.Collapse id="basic-navbar-nav" className={isNavCollapsed ? "" : "show"}>
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Item>
                 <Nav.Link as={Link} to="/the-eagles-test/" onClick={closeNav}>Home</Nav.Link>
