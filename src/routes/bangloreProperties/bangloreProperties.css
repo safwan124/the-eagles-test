@@ -1,0 +1,29 @@
+.bangaloreProperties {
+  padding: 20px;
+}
+
+.property-card {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.property-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.property-card .btn {
+  margin: 5px 0;
+}
+
+.property-card .card-footer {
+  padding: 0.5rem;
+}
+
+.property-card .img-fluid {
+  width: 100%; /* Set to 100% to occupy full width of the column */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+  object-fit: cover; /* Crop image to fill the dimensions */
+}
+  
